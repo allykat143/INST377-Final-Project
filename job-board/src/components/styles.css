@@ -1,0 +1,96 @@
+
+body {
+    background-color: #2f8ead; 
+    color: black; 
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ .title{
+  text-align: center;
+  margin-top: 100px;
+ }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* SearchBar styling */
+  input, select, button {
+    margin: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    box-sizing: border-box;
+  }
+  
+  .search-button {
+    background-color: #111827;
+    border: 1px solid transparent;
+    border-radius: 0.75rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: 0.2s;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .search-button:hover {
+    background-color: #374151;
+  }
+  
+  .search-button:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  
+  @media (min-width: 768px) {
+    .search-button {
+      padding: 0.75rem 1.5rem;
+    }
+  }
+  .navbar {
+    background-color: #111827;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-list li {
+    margin: 0 0.5rem; 
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  .nav-list a:hover {
+    color: #93C5FD;
+  }
