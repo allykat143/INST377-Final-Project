@@ -7,7 +7,7 @@ const JobList = ({ jobs }) => {
         <li key={job.MatchedObjectId}>
           <strong>{job.MatchedObjectDescriptor.PositionTitle}</strong>
           <p> Company: {job.MatchedObjectDescriptor.OrganizationName}</p>
-          <p>Application Link: {job.MatchedObjectDescriptor.PositionURI}</p>
+          <p>Application Link: <a href = {job.MatchedObjectDescriptor.PositionURI}>{job.MatchedObjectDescriptor.PositionURI}</a></p>
           <p>Application Close Date: {job.MatchedObjectDescriptor.ApplicationCloseDate}</p>
         </li>
       ))}
