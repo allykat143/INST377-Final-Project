@@ -5,7 +5,9 @@ import axios from 'axios';
 import SearchBar from './components/SearchBar';
 import JobList from './components/JobList';
 import About from './components/About';
+import Contact from './components/Contact';
 import './components/styles.css';
+
 
 const API_KEY = 'Kug/xpqSzBM6ijj5ib6xhiNu1bN+lyozvJIPrPnUpWg=';
 const API_URL = 'https://data.usajobs.gov/api/search';
@@ -19,6 +21,9 @@ const NavBar = () => {
         </li>
         <li>
           <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </nav>
@@ -66,6 +71,7 @@ const App = () => {
             }
           />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
